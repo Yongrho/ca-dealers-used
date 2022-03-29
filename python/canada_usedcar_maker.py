@@ -7,7 +7,7 @@ df_usedcar = df_usedcar.drop(['id', 'vin'], axis=1)
 
 df_by_maker = df_usedcar.groupby(['make']).size().reset_index(name='count')
 df_by_maker = df_by_maker.sort_values('count', ascending=False)
-print(df_by_maker)
+#print(df_by_maker)
 
 fig = px.bar(df_by_maker, x='make', y='count',
                 title="The sales of used cars from 1981 to 2022 by maker", text_auto='.2s')

@@ -5,7 +5,7 @@ df_usedcar = pd.read_csv('ca-dealers-used.csv')
 df_usedcar = df_usedcar.drop(['id', 'vin'], axis=1)
 
 df_by_year = df_usedcar.groupby(['year']).size().reset_index(name='count')
-print(df_by_year)
+#print(df_by_year)
 
 fig = px.line(df_by_year, x='year', y='count',
                 title='The sales of used cars from 1981 to 2022')

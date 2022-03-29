@@ -124,3 +124,4 @@ fig.update_layout(
     )
 
 fig.show()
+fig.write_html('canada_usedcar_city.html')
