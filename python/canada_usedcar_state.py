@@ -40,7 +40,7 @@ for i in range(len(limits)):
         name = '{0} - {1}'.format(lim[0],lim[1])))
 
 fig.update_layout(
-        title_text = '1981-2022 Canada used car volume<br>(Click legend to toggle traces)',
+        title_text = '1981-2022 Canada used car volume by state<br>(Click legend to toggle traces)',
         geo = dict(
             scope = 'north america',
             landcolor = 'rgb(217, 217, 217)',
